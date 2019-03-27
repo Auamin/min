@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#cart").on("click",".addnum",function(){var t=1*$(this).prev().html();100<=++t&&(t=100),$(this).prev().html(t)}),$("#cart").on("click",".cutnum",function(){var t=1*$(this).next().html();--t<=1&&(t=1),$(this).next().html(t)})});

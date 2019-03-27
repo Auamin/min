@@ -1,0 +1,71 @@
+ 验证用户名
+/*
+    post
+    php/01check.php
+    username : 要验证的用户名
+    返回
+        {
+            yes : 成功；
+            no : 失败
+        }
+ */
+
+
+注册功能 
+/*
+    post
+    php/02reg.php
+    name : 需要注册的用户名
+    passw : 需要注册的密码
+    返回
+        {
+            yes : 成功；
+            no : 失败
+        }
+ */
+
+
+登录功能
+/*
+    post
+       php/03login.php
+       name : 用户名
+       passw : 密码
+       返回
+           {
+               yes : 登录成功；
+               no : 登录失败
+           }
+*/
+
+
+ 渲染页面功能 （页码）
+/*
+    post
+       php/04list.php
+       items : 每页的信息条数
+       page : 页码（渲染页码第一页就可以啦）
+       返回
+           {
+              array：返回的数据信息
+	               'total' => 数据库表格总的信息量,
+	               'list' => 每条信息的具体内容,
+	               'page' => 页码,
+	               'items' => 每页的信息条数
+           }
+*/
+
+
+ 排序
+/*
+     get
+        php/05rank.php
+        x : 每页的信息条数
+        y : 页码（渲染页码第一页就可以啦）
+        返回
+            {
+                $content : 返回的价格￥排序内容
+            }
+*/
+
+
